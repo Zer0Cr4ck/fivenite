@@ -1,0 +1,59 @@
+.hero img{
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    
+}
+
+.hero{
+    
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+
+.hero.isabg{
+    position: relative;
+}
+.isAway{
+margin-block-start: 5rem;
+}
+
+
+.more_information{
+    display: inline-block;
+    background-color: var(--yellow);
+    padding-block-start: 1rem;
+    padding-block-end:1rem;
+    padding-inline-start: 2rem;
+    padding-inline-end:2rem;
+    font: var(--button);
+    text-decoration: none;
+    color: var(--black);
+    display: none;
+    position: absolute;
+    text-transform: uppercase;
+    transition: .3s ease;
+    
+}
+
+.more_information:hover{
+    background-color: yellowgreen;
+}
+
+.more_information:active{
+    transform: scale(.9);
+}
+
+@media only screen and (min-width: 768px) {
+
+
+.more_information{
+    display: block;
+    inset-block-start:calc(90% - 8rem) ;
+    
+}
+
+
+
+}
